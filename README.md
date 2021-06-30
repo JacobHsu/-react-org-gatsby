@@ -6,6 +6,9 @@ reactjs /[zh-hant.reactjs.org](https://github.com/reactjs/zh-hant.reactjs.org)
 
 ## Getting started
 
+ci [github-actions-demo](https://github.com/JacobHsu/github-actions-demo)  
+Gatsby 建置完成後，在`public`內便會有你建置完成的整個專案  
+
 ### Prerequisites
 
 1. Git
