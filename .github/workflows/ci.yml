@@ -2,9 +2,10 @@ name: GitHub Actions Build and Deploy Demo
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
+    if: github.event_name == 'push' && "contains(github.event.head_commit.message, 'ci:')"
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
