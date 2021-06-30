@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build-and-deploy:
-    if: github.event_name == 'push' && "contains(github.event.head_commit.message, 'ci:')"
+    if: "contains(github.event.head_commit.message, 'ci:')"
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
